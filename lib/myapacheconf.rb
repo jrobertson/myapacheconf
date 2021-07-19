@@ -39,6 +39,16 @@ tags: apache
     build()
 
   end
+  
+  def generate_files(dir='/tmp/')
+    
+    @conf.each_pair do |domain, conf|
+
+      puts 'domain: ' + domain.inspect if @debug
+      File.write File.join(dir, ("%s.conf" % domain)), conf
+
+    end    
+  end
 
 
   private
@@ -64,4 +74,3 @@ s = "<VirtualHost *:80>
   
 
 end
-

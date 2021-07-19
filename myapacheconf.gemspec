@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'myapacheconf'
-  s.version = '0.1.0'
+  s.version = '0.1.1'
   s.summary = 'Helps build apache2 virtual host configuration files from a simpler config file.'
   s.authors = ['James Robertson']
   s.files = Dir['lib/myapacheconf.rb']
